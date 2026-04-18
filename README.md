@@ -1,27 +1,8 @@
-How to build PlatformIO based project
-=====================================
+Commit 2.1
 
-1. [Install PlatformIO Core](https://docs.platformio.org/page/core.html)
-2. Download [development platform with examples](https://github.com/platformio/platform-freescalekinetis/archive/develop.zip)
-3. Extract ZIP archive
-4. Run these commands:
+Objetivo do teste:que o LED ficasse aceso na cor laranja
 
-```shell
-# Change directory to example
-$ cd platform-freescalekinetis/examples/zephyr-blink
+Resultado: o LED ficou aceso na cor laranja por meio da regulação de intensidade dos LEDs vermelho e verde, sendo o verde um pouco mais fraco, via PWM.
 
-# Build project
-$ pio run
+<img width="848" height="478" alt="Design sem nome" src="https://github.com/user-attachments/assets/a657c168-77aa-4af7-b21f-9dab126d1e5e" />
 
-# Upload firmware
-$ pio run --target upload
-
-# Build specific environment
-$ pio run -e frdm_k64f
-
-# Upload firmware for the specific environment
-$ pio run -e frdm_k64f --target upload
-
-# Clean build files
-$ pio run --target clean
-```
